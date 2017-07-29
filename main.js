@@ -35,15 +35,16 @@ var restaurants = [{
 					category: 'Veg ,Non-Veg , Casual Dining, Bar',
 					vote: '4.6',
 					cuisines: 'Indian',
-					cost: '2800',
+					cost: '100',
 					id: 1,
-					hours: '12 Noon to 1 AM (Mon-Sun)',
+					hours: '12 Noon to  12AM (Mon-Sun)',
 					bestDish: {
-								name: 'Fish Curry',
-								image: 'http://ksmartstatic.sify.com/cmf-1.0.0/appflow/bawarchi.com/Image/oetk1pejbfdag_bigger.jpg'
+								name: 'Fries',
+								image: 'https://i.ytimg.com/vi/ETTyVQrUZt8/maxresdefault.jpg'
 							},
 					image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
-				},{
+				},
+				{
             name: 'Nisi Coffee',
             address: 'Inner Circle, Connaught Place',
             location: 'Connaught Place',
@@ -55,42 +56,58 @@ var restaurants = [{
 									name: 'Espresso',
 									image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_HhBLt8HRcEb_HRYFKsuwHYK8SV8fuXUKSW2fKDO-Qo1ZuXQlQ'
 								},
-            hours: '9 AM to 1 AM (Mon-Sun)',
+            hours: '9 AM to 10 PM (Mon-Sun)',
             image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
           },
           {
-                name: 'Sagar Ratna',
+                name: 'A 1 Food Point',
                 address: 'baddi',
                 location: 'Himachal pradesh',
-                category: 'Casual Dining, Bar',
-                vote: '3.5',
+                category: 'Casual Dining, Veg and Non-Veg',
+                vote: '3.9',
                 cuisines: 'Modern Indian',
-                cost: '1200',
+                cost: '300',
 								id: 3,
-                hours: '5 AM Noon to 10 PM (Mon-Sun)',
+                hours: '9 AM Noon to 10 PM (Mon-Sun)',
 								bestDish: {
-											name: 'Corn Pizza',
-											image: 'http://kottke.org/plus/misc/images/egg-ruhlman.jpg'
+											name: 'Butter chicken',
+											image: 'http://www.ndtv.com/cooks/images/chicken.butter.masala%20%281%29.jpg'
 										},
 								image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
               },
               {
-                    name: 'KFC',
-                    address: 'CHANDIGARH',
-                    location: 'CHANDIGARH',
-                    category: 'Casual Dining,',
-                    vote: '4.3',
-                    cuisines: 'Spanish, Italian , Indian',
-                    cost: '1600',
+								name: 'Best Restaurant (B.R.)',
+								address: 'Opposite to Bus Stand, Kangra',
+								location: 'Kangra',
+								category: 'Party, Bar, Dining',
+								vote: '4.8',
+								cuisines: 'Modern Indian',
+								cost: '150',
 										id: 4,
-                    hours: '1 AM to 1 PM (Mon-Sun)',
+                    hours: '6 AM to 2 AM (Mon-Sun)',
 										bestDish: {
-													name: 'Corn Pizza',
-													image: 'http://kottke.org/plus/misc/images/egg-ruhlman.jpg'
+													name: 'Oatmeal cookies',
+													image: 'http://www.shelikesfood.com/wp-content/uploads/2017/03/Healthy-Baked-Oatmeal-Cups-6-Ways-9404.jpg'
 												},
 										image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
-									}]
+									},
+									{
 
+									name: ' PizzaHut ',
+								 address: 'Near Govt. Degree College, Shimla',
+								 location: 'Shimla',
+								 category: 'Fast food , Casual Dining, Pizza',
+								 vote: '4.7',
+								 cuisines: 'Italian',
+								 cost: '200',
+								 id: 1,
+								 hours: '12 Noon to  12AM (Mon-Sun)',
+								 bestDish: {
+											 name: 'Corn Pizza',
+											 image: 'http://www.pngall.com/wp-content/uploads/2016/05/Pizza-Free-PNG-Image.png'
+										 },
+								 image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+							 }]
 
 				$scope.restaurant = restaurants[$routeParams.id - 1];
 
@@ -111,8 +128,9 @@ var restaurants = [{
 
 					  			var list = '';
 									var protein = ['egg','chicken','oats','cheese','yogurt','milk','broccoli','tuna','lentil','fish','shrimp'];
-									var fat = ['flaxseed','almond','oil','avocado','walnuts','peanut','cashew','dark chocolate'];
-									var carb = ['oatmeal','yams','brown rice','pumpkin','apple','oranges','pears','mango']
+									var fat = ['flaxseed','almond','oil','avocado','walnuts','peanut','cashew','dark chocolate','chips','french fries','sweet','pizza','pastry','frozen pizza'];
+									var carb = ['oatmeal','yams','brown rice','pumpkin','apple','oranges','pears','mangobread', 'beans', 'milk', 'popcorn', 'potatoes', 'cookies', 'spaghetti', 'soft drinks'];
+
 
 									for (var i =0;i < ingredients.length;i++) {
 
@@ -209,9 +227,10 @@ foodieApp.controller('mainController',function($scope) {
 							cuisines: 'Modern Indian',
 							cost: '2200',
 							id: 1,
-							hours: '12 Noon to 1 AM (Mon-Sun)',
+							hours: '12 Noon to 12 AM (Mon-Sun)',
 							image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
-						},{
+						},
+						{
             name: 'Nisi Coffee',
             address: 'Inner Circle, Connaught Place',
             location: 'Connaught Place',
@@ -220,31 +239,43 @@ foodieApp.controller('mainController',function($scope) {
             cuisines: 'Modern Indian',
             cost: '400',
 						id: 2,
-            hours: '9 AM to 1 AM (Mon-Sun)',
+            hours: '9 AM to 10 PM (Mon-Sun)',
             image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
           },
           {
-                name: 'Sagar Ratna',
-                address: 'baddi',
-                location: 'Himachal pradesh',
-                category: 'Casual Dining, Bar',
-                vote: '3.5',
-                cuisines: 'Modern Indian',
-                cost: '1000000',
-								id: 3,
-                hours: '5 AM Noon to 10 PM (Mon-Sun)',
+						name: 'A 1 Food Point',
+						address: 'baddi',
+						location: 'Himachal pradesh',
+						category: 'Casual Dining, Veg and Non-Veg',
+						vote: '3.9',
+						cuisines: 'Modern Indian',
+						cost: '200',
+						id: 3,
+						hours: '9 AM Noon to 10 PM (Mon-Sun)',
                 image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
               },
               {
-                    name: 'AFC',
-                    address: 'BUEST',
-                    location: 'CHANDIGARH',
-                    category: 'Casual Dining, Bar',
-                    vote: '5.0',
+                    name: 'Best Restaurant (B.R.)',
+                    address: 'Opposite to Bus Stand, Kangra',
+                    location: 'Kangra',
+                    category: 'Party, Bar, Dining',
+                    vote: '4.8',
                     cuisines: 'Modern Indian',
-                    cost: '50',
+                    cost: '350',
 										id: 4,
                     hours: '1 AM to 1 PM (Mon-Sun)',
                     image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
-                    }]
+									},
+									{
+										name: ' PizzaHut ',
+									 address: 'Near Govt. Degree College, Shimla',
+									 location: 'Shimla',
+									 category: 'Fast food , Casual Dining, Pizza',
+									 vote: '4.7',
+									 cuisines: 'Italian',
+									 cost: '200',
+									 id: 5,
+									 hours: '12 Noon to  12AM (Mon-Sun)',
+									image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+								}]
 })
