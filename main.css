@@ -7,6 +7,8 @@
 body {
     background-color: #F3F3E8;
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url('https://static.pexels.com/photos/51115/restaurant-wine-glasses-served-51115.jpeg');
+    background-size: cover; 
 }
 
 .hero {

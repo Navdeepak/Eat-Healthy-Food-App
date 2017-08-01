@@ -42,7 +42,7 @@ var restaurants = [{
 								name: 'Fries',
 								image: 'https://i.ytimg.com/vi/ETTyVQrUZt8/maxresdefault.jpg'
 							},
-					image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+					image: 'http://showmeinstitute.org/sites/default/files/Restaurant.jpg'
 				},
 				{
             name: 'Nisi Coffee',
@@ -52,12 +52,13 @@ var restaurants = [{
             vote: '4.8',
             cuisines: 'Modern Indian',
             cost: '400',
+						id: 2,
 						bestDish: {
 									name: 'Espresso',
 									image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_HhBLt8HRcEb_HRYFKsuwHYK8SV8fuXUKSW2fKDO-Qo1ZuXQlQ'
 								},
             hours: '9 AM to 10 PM (Mon-Sun)',
-            image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+            image: 'https://d3tv8y14ogpztx.cloudfront.net/pulses/images/000/028/878/wide_product/nisi1.jpg'
           },
           {
                 name: 'A 1 Food Point',
@@ -73,7 +74,7 @@ var restaurants = [{
 											name: 'Butter chicken',
 											image: 'http://www.ndtv.com/cooks/images/chicken.butter.masala%20%281%29.jpg'
 										},
-								image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+								image: 'https://content3.jdmagicbox.com/comp/solan/w7/9999p1792.1792.151030173852.n7w7/catalogue/a1-punjabi-food-point-bhud-solan-8lyw.jpg'
               },
               {
 								name: 'Best Restaurant (B.R.)',
@@ -89,7 +90,7 @@ var restaurants = [{
 													name: 'Oatmeal cookies',
 													image: 'http://www.shelikesfood.com/wp-content/uploads/2017/03/Healthy-Baked-Oatmeal-Cups-6-Ways-9404.jpg'
 												},
-										image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+										image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7cVdj15aJ_iihZ9uaBRkLZAmtvCkGsrlPWCGLPiJkfTWfj7Nk'
 									},
 									{
 
@@ -100,13 +101,30 @@ var restaurants = [{
 								 vote: '4.7',
 								 cuisines: 'Italian',
 								 cost: '200',
-								 id: 1,
+								 id: 5,
 								 hours: '12 Noon to  12AM (Mon-Sun)',
 								 bestDish: {
 											 name: 'Corn Pizza',
-											 image: 'http://www.pngall.com/wp-content/uploads/2016/05/Pizza-Free-PNG-Image.png'
+											 image: 'https://www.elementstark.com/woocommerce-extension-demos/wp-content/uploads/sites/2/2016/12/pizza.jpg'
 										 },
-								 image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+								 image: 'https://s-media-cache-ak0.pinimg.com/originals/e2/08/23/e20823e49d862f0c3fa5487d9b7d3c13.jpg'
+							 },
+							 {
+ 									name: ' The Great Dhaba ',
+ 								 address: 'Post Office Box 924, Ludhiana 141003',
+ 								 location: 'Ludhiana',
+ 								 category: 'Fast food , Casual Dining',
+ 								 vote: '4.7',
+ 								 cuisines: 'Indian, Japanese',
+ 								 cost: '550',
+ 								 id: 6,
+ 								 hours: '12 Noon to  12AM (Mon-Sun)',
+ 								 bestDish: {
+ 											 name: 'Sushi',
+ 											 image: 'https://i.ytimg.com/vi/jPLJbSp6vKY/maxresdefault.jpg'
+ 										 },
+ 								 image: 'https://media-cdn.tripadvisor.com/media/photo-s/0d/00/21/5a/front-exterior.jpg'
+
 							 }]
 
 				$scope.restaurant = restaurants[$routeParams.id - 1];
@@ -117,7 +135,7 @@ var restaurants = [{
 						'method': 'POST',
 						'url': 'https://api.clarifai.com/v2/models/bd367be194cf45149e75f01d59f77ba7/outputs',
 						'headers': {
-							'Authorization': 'Key a83cf33d81ca4f71ae7f18345e7b8ab0',
+							'Authorization': 'Key a653de3715d5400ab765c24b3770ffee',
 							'Content-Type': 'application/json'
 						},
 						'data': data,
@@ -225,10 +243,10 @@ foodieApp.controller('mainController',function($scope) {
 							category: 'Veg ,Non-Veg , Casual Dining, Bar',
 							vote: '4.2',
 							cuisines: 'Modern Indian',
-							cost: '2200',
+							cost: '100',
 							id: 1,
 							hours: '12 Noon to 12 AM (Mon-Sun)',
-							image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+							image: 'http://showmeinstitute.org/sites/default/files/Restaurant.jpg'
 						},
 						{
             name: 'Nisi Coffee',
@@ -240,7 +258,7 @@ foodieApp.controller('mainController',function($scope) {
             cost: '400',
 						id: 2,
             hours: '9 AM to 10 PM (Mon-Sun)',
-            image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+            image: 'https://d3tv8y14ogpztx.cloudfront.net/pulses/images/000/028/878/wide_product/nisi1.jpg'
           },
           {
 						name: 'A 1 Food Point',
@@ -249,10 +267,10 @@ foodieApp.controller('mainController',function($scope) {
 						category: 'Casual Dining, Veg and Non-Veg',
 						vote: '3.9',
 						cuisines: 'Modern Indian',
-						cost: '200',
+						cost: '300',
 						id: 3,
 						hours: '9 AM Noon to 10 PM (Mon-Sun)',
-                image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+                image: 'https://content3.jdmagicbox.com/comp/solan/w7/9999p1792.1792.151030173852.n7w7/catalogue/a1-punjabi-food-point-bhud-solan-8lyw.jpg'
               },
               {
                     name: 'Best Restaurant (B.R.)',
@@ -261,10 +279,10 @@ foodieApp.controller('mainController',function($scope) {
                     category: 'Party, Bar, Dining',
                     vote: '4.8',
                     cuisines: 'Modern Indian',
-                    cost: '350',
+                    cost: '150',
 										id: 4,
                     hours: '1 AM to 1 PM (Mon-Sun)',
-                    image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+                    image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7cVdj15aJ_iihZ9uaBRkLZAmtvCkGsrlPWCGLPiJkfTWfj7Nk'
 									},
 									{
 										name: ' PizzaHut ',
@@ -276,6 +294,19 @@ foodieApp.controller('mainController',function($scope) {
 									 cost: '200',
 									 id: 5,
 									 hours: '12 Noon to  12AM (Mon-Sun)',
-									image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
-								}]
+									image: 'https://s-media-cache-ak0.pinimg.com/originals/e2/08/23/e20823e49d862f0c3fa5487d9b7d3c13.jpg'
+								},
+								{
+									name: ' The Great Dhaba ',
+								 address: 'Post Office Box 924, Ludhiana 141003',
+								 location: 'Ludhiana',
+								 category: 'Fast food , Casual Dining',
+								 vote: '4.4',
+								 cuisines: 'Indian, Japanese',
+								 cost: '550',
+								 id: 6,
+								 hours: '12 Noon to  12AM (Mon-Sun)',
+								 image: 'https://media-cdn.tripadvisor.com/media/photo-s/0d/00/21/5a/front-exterior.jpg'
+							 }]
+
 })
