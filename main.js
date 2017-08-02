@@ -100,12 +100,12 @@ var restaurants = [{
 								 category: 'Fast food , Casual Dining, Pizza',
 								 vote: '4.7',
 								 cuisines: 'Italian',
-								 cost: '200',
+								 cost: '350',
 								 id: 5,
 								 hours: '12 Noon to  12AM (Mon-Sun)',
 								 bestDish: {
-											 name: 'Corn Pizza',
-											 image: 'https://www.elementstark.com/woocommerce-extension-demos/wp-content/uploads/sites/2/2016/12/pizza.jpg'
+											 name: 'Margherita',
+											 image: 'https://www.daringgourmet.com/wp-content/uploads/2013/02/Pizza-6-sm.jpg'
 										 },
 								 image: 'https://s-media-cache-ak0.pinimg.com/originals/e2/08/23/e20823e49d862f0c3fa5487d9b7d3c13.jpg'
 							 },
@@ -291,7 +291,7 @@ foodieApp.controller('mainController',function($scope) {
 									 category: 'Fast food , Casual Dining, Pizza',
 									 vote: '4.7',
 									 cuisines: 'Italian',
-									 cost: '200',
+									 cost: '350',
 									 id: 5,
 									 hours: '12 Noon to  12AM (Mon-Sun)',
 									image: 'https://s-media-cache-ak0.pinimg.com/originals/e2/08/23/e20823e49d862f0c3fa5487d9b7d3c13.jpg'

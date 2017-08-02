@@ -8,12 +8,12 @@ body {
     background-color: #F3F3E8;
     font-family: Helvetica, Arial, sans-serif;
     background-image: url('https://static.pexels.com/photos/51115/restaurant-wine-glasses-served-51115.jpeg');
-    background-size: cover; 
+    background-size: 100% 100% contain;
 }
 
 .hero {
-    background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
-    background-size: cover;
+    background-image: url('https://cdn.shutterstock.com/shutterstock/videos/6305558/thumb/1.jpg');
+    background-size: 100%;
     min-height: 300px;
     border-radius: 4px;
     color: white;
@@ -153,3 +153,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
+ .navbar-brand {
+   border-radius: 20px;
+ }
